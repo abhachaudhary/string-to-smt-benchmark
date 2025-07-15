@@ -1,0 +1,9 @@
+boyer2 doesn't take any string as input, but it plays with string. Ask Bill?
+
+clausify doesn't take string as input but I have modified it. Ask Bill, if that's okay?\
+
+minimax: look back again
+
+pretty: come back again
+
+primetest: even if it takes string, it doesn't perfrom any string operations
