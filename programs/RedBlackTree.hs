@@ -1,10 +1,4 @@
-module RedBlackTree
-  (
-    Tree,
-    empty,
-    member,
-    insert)
-where
+module RedBlackTree where
 
 data Color = R | B deriving (Show, Eq)
 
