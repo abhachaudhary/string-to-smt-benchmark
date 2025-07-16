@@ -7,3 +7,5 @@ minimax: look back again
 pretty: come back again
 
 primetest: even if it takes string, it doesn't perfrom any string operations
+
+hartel: nucliec2: come back here
