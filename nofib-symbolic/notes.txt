@@ -6,6 +6,16 @@ minimax: look back again
 
 pretty: come back again
 
-primetest: even if it takes string, it doesn't perfrom any string operations
-
 hartel: nucliec2: come back here
+
+gen_regexps : errors in G2 even without smt flag
+
+cryptarithm : G2: evalVar: bad input.Id (Name "execStateT" (Just "Control.Monad.Trans.State.Lazy") 8214565720323784781 Nothing) (TyForAll (Id (Name "m" Nothing 6989586621679014863 Nothing) (TyFun TYPE TYPE)) (TyForAll (Id (Name "s" Nothing 6989586621679014864 Nothing) TYPE) (TyForAll (Id (Name "a" Nothing 6989586621679014865 Nothing) TYPE) (TyFun (TyApp (TyCon (Name "Monad" (Just "GHC.Base") 3602879701896396808 Nothing) (TyFun (TyFun TYPE TYPE) (TyCon (Name "Constraint" (Just "GHC.Types") 3674937295934324922 Nothing) TYPE))) (TyVar (Id (Name "m" Nothing 6989586621679014863 Nothing) (TyFun TYPE TYPE)))) (TyFun (TyApp (TyApp (TyApp (TyCon (Name "StateT" (Just "Control.Monad.Trans.State.Lazy") 8214565720323784800 Nothing) (TyFun TYPE (TyFun (TyFun TYPE TYPE) (TyFun TYPE TYPE)))) (TyVar (Id (Name "s" Nothing 6989586621679014864 Nothing) TYPE))) (TyVar (Id (Name "m" Nothing 6989586621679014863 Nothing) (TyFun TYPE TYPE)))) (TyVar (Id (Name "a" Nothing 6989586621679014865 Nothing) TYPE))) (TyFun (TyVar (Id (Name "s" Nothing 6989586621679014864 Nothing) TYPE)) (TyApp (TyVar (Id (Name "m" Nothing 6989586621679014863 Nothing) (TyFun TYPE TYPE))) (TyVar (Id (Name "s" Nothing 6989586621679014864 Nothing) TYPE)))))))))
+CallStack (from HasCallStack):
+  error, called at src/G2/Execution/Rules.hs:140:19 in g2-0.2.0.0-inplace:G2.Execution.Rules
+
+expert : results error
+
+mate : results error
+
+para : results error

@@ -102,6 +102,9 @@ fuse (T B t1 x t2) (T B t3 y t4)  =
        (T B s1 z s2) -> balL (T B t1 x (T B s y t4))
 
 
-testInsert :: [String] -> Tree String
+testInsert :: (Ord a) => [a] -> Tree a
 testInsert [] = empty
 testInsert (x:xs) = insert x (testInsert xs)
+
+main :: String -> [String] -> Bool
+main a xs = let tree = testInsert xs in member a tree

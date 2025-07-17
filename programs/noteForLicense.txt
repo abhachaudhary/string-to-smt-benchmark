@@ -1,0 +1,2 @@
+BinaryHeap.hs, LeftistHeap.hs, RedBlackTree.hs benchmarks are taken from github repository; https://github.com/Abhiroop/okasaki/
+The author of this repository has not endorsed or promoted our work in any way.

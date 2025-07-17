@@ -6,18 +6,13 @@
 -- rather that the output itself, thus avoiding having to generate such a
 -- huge output file to get a reasonable execution time.
 
-module Main (main) where
+module Main2 (main) where
 
 import Data.Char
 import Control.Monad (replicateM_)
 import System.Environment
-import NofibUtils (hash)
 
-import G2.Symbolic
-
-main = replicateM_ 500 $ do
-  regex <- mkSymbolic
-  print (hash (concat (expand regex)))
+main regex = concat (expand regex)
 
 numchars :: [String] -> Int
 numchars l = sum $ map length l

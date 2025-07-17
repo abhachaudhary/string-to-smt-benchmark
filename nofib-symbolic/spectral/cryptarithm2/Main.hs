@@ -12,7 +12,7 @@ in the function solve. It prunes searches than simply
 can not ever reach valid results.
 -}
 
-module Main where
+module Main2 where
 
 import Control.Monad
 import Control.Monad.Trans.State
@@ -120,14 +120,16 @@ puzzle top bot =
 	botVal = expand bot
 	expand = foldl (\ a b -> a * 10 + look b) 0
 
-main = do
-  (n:_) <- getArgs
-  forM_ [1..read n] $ \i -> do
-    let args = [ "THIRTY"
-               , "TWELVE"
-               , "TWELVE"
-               , "TWELVE"
-               , "TWELVE"
-               , "TWELVE" ++ if i > 999999 then "1" else ""
-               ]
-    putStr (puzzle args "NINETY")
+-- main = do
+--   (n:_) <- getArgs
+--   forM_ [1..read n] $ \i -> do
+--     let args = [ "THIRTY"
+--                , "TWELVE"
+--                , "TWELVE"
+--                , "TWELVE"
+--                , "TWELVE"
+--                , "TWELVE" ++ if i > 999999 then "1" else ""
+--                ]
+--     putStr (puzzle args "NINETY")
+
+main top bot = puzzle top bot

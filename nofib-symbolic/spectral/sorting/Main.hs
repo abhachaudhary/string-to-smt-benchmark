@@ -2,10 +2,10 @@ module Main2(main) where
 
 import Sort
 
-import Control.Monad (replicateM_)
+-- import Control.Monad (replicateM_)
 import Data.List (intersperse)
-import System.Environment (getArgs)
-import NofibUtils (hash)
+-- import System.Environment (getArgs)
+-- import NofibUtils (hash)
 
 main f = mangle f
 

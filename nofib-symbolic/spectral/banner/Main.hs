@@ -28,14 +28,18 @@
 --
 -- Enjoy!
 ------------------------------------------------------------------------------
+module Main2(main) where
+
 import Data.Char
 import Data.List
 import Prelude hiding (null, length, or, foldr, maximum, concat, concatMap, foldl, foldr1, foldl1, sum, all, elem)
 
 -- main: added by partain
-main = do
-  stuff <- getContents
-  mapM_ (putStr . say) (lines stuff)
+-- main = do
+--   stuff <- getContents
+--   mapM_ (putStr . say) (lines stuff)
+
+main stuff = say stuff
 
 ------------------------------------------------------------------------------
 
