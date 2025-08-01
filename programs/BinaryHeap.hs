@@ -4,7 +4,7 @@ import Prelude hiding (minimum)
 
 data BinHeap a = Empty
                | Node Bool (BinHeap a) a (BinHeap a)
-               deriving (Show)
+               deriving (Eq, Show)
 
 empty :: BinHeap a
 empty = Empty

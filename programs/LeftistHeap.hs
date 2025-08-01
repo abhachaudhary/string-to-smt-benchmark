@@ -2,6 +2,7 @@ module LeftistHeap where
 
 data LHeap a = Empty
              | Node Int a (LHeap a) (LHeap a)
+             deriving (Show, Eq)
 
 empty :: LHeap a
 empty = Empty
