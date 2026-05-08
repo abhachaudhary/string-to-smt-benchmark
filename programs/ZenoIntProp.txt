@@ -1,13 +1,13 @@
 ZenoInt.null;SeqInt
 ZenoInt.++;SeqInt
 ZenoInt.rev;SeqInt
-ZenoInt.delete;SeqInt
+ZenoInt.delete;SeqInt;ite
 ZenoInt.len;SeqInt
 ZenoInt.elem;SeqInt
 ZenoInt.drop;SeqInt
 ZenoInt.take;SeqInt
 ZenoInt.count;SeqInt;ite,seq.prefixof,seq.suffixof
-ZenoInt.butlast;SeqInt
+ZenoInt.butlast;SeqInt;ite
 ZenoInt.last;SeqInt
 ZenoInt.sorted;SeqInt
 ZenoInt.insort;SeqInt
