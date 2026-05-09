@@ -8,11 +8,11 @@ ZenoInt.drop;SeqInt
 ZenoInt.take;SeqInt
 ZenoInt.count;SeqInt;ite,seq.prefixof,seq.suffixof
 ZenoInt.butlast;SeqInt;ite
-ZenoInt.last;SeqInt
+ZenoInt.last;SeqInt;ite
 ZenoInt.sorted;SeqInt
 ZenoInt.insort;SeqInt
 ZenoInt.ins;SeqInt
 ZenoInt.ins1;SeqInt
 ZenoInt.sort;SeqInt
-ZenoInt.butlastConcat;SeqInt
-ZenoInt.lastOfTwo;SeqInt
+ZenoInt.butlastConcat;SeqInt;ite
+ZenoInt.lastOfTwo;SeqInt;ite,seq.replace,seq.indexof
