@@ -14,5 +14,4 @@ False.length2;SeqInt
 False.count;SeqInt;ite,seq.prefixof,seq.suffixof
 False.sorted;SeqInt
 False.nub;SeqInt
-False.remove;SeqInt
 False.remove2;SeqInt
