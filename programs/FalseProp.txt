@@ -3,7 +3,7 @@ False.++;SeqInt
 False.drop;SeqInt
 False.rev;SeqInt
 False.qrev;SeqInt
-False.rotate;SeqInt
+False.rotate;SeqInt;seq.rev
 False.elem;SeqInt
 False.union;SeqInt
 False.sort;SeqInt
