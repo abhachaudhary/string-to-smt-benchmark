@@ -1,0 +1,15 @@
+Prod.length;SeqInt
+Prod.++;SeqInt
+Prod.drop;SeqInt
+Prod.rev;SeqInt
+Prod.qrev;SeqInt
+Prod.qrevflat;SeqInt
+Prod.rotate;SeqInt
+Prod.elem;SeqInt
+Prod.subset;SeqInt
+Prod.intersect;SeqInt
+Prod.union;SeqInt
+Prod.isort;SeqInt
+Prod.insert;SeqInt
+Prod.count;SeqInt;ite,seq.prefixof,seq.suffixof
+Prod.sorted;SeqInt
