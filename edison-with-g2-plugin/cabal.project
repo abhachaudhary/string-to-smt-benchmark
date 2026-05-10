@@ -1,0 +1,13 @@
+packages:
+  ./../../g2.cabal
+  edison-api
+  edison-core
+  test
+  
+package *
+    -- ghc-options: -O0 -fno-omit-interface-pragmas -fno-ignore-interface-pragmas -fspecialize -fcross-module-specialize
+    -- ghc-options: -fexpose-all-unfoldings 
+    -- -fno-worker-wrapper -fno-cpr-anal -fno-strictness -fno-worker-wrapper-cbv -fspecialize -fcross-module-specialise
+
+-- Build faster
+documentation: False
