@@ -12,7 +12,7 @@ ZenoInt.last;SeqInt;ite
 ZenoInt.sorted;SeqInt
 ZenoInt.insort;SeqInt
 ZenoInt.ins;SeqInt
-ZenoInt.ins1;SeqInt;seq.at,seq.rev,seq.replace,seq.replace_all,seq.len,<,+,-
+ZenoInt.ins1;SeqInt;seq.at,seq.rev,seq.replace,seq.replace_all,seq.len,seq.indexof,<,+,-
 ZenoInt.sort;SeqInt
 ZenoInt.butlastConcat;SeqInt;ite
 ZenoInt.lastOfTwo;SeqInt;ite,seq.replace,seq.indexof
