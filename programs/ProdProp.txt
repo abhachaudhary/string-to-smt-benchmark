@@ -1,14 +1,11 @@
 Prod.length;SeqInt
 Prod.++;SeqInt
 Prod.drop;SeqInt
+Prod.rotate;SeqInt;seq.rev,str.replace_all,seq.at,seq.indexof,ite,seq.replace_all,seq.replace,seq.indexof,seq.contains
 Prod.rev;SeqInt
 Prod.qrev;SeqInt
 Prod.qrevflat;SeqInt
-Prod.rotate;SeqInt
 Prod.elem;SeqInt
-Prod.subset;SeqInt
-Prod.intersect;SeqInt
-Prod.union;SeqInt
 Prod.isort;SeqInt
 Prod.insert;SeqInt
 Prod.count;SeqInt;ite,seq.prefixof,seq.suffixof
