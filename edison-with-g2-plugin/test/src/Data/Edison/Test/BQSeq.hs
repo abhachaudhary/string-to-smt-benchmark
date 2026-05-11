@@ -458,12 +458,12 @@ prop_equals :: Seq Int -> Seq Int -> Seq Int -> Bool
 prop_equals seq xs ys =
     si xs && si ys && (xs == ys) == (toList xs == toList ys)
 
--- {-# ANN prop_fromList (SymExWithConfig "--n 200") #-}
--- prop_fromList :: Seq Int -> [Int] -> Bool
--- prop_fromList seq xs =
---     fromList xs === (Prelude.foldr lcons empty xs `asTypeOf` seq)
---     &&
---     toList (fromList xs `asTypeOf` seq) == xs
+{-# ANN prop_fromList (SymExWithConfig "--n 200") #-}
+prop_fromList :: Seq Int -> [Int] -> Bool
+prop_fromList seq xs =
+    fromList xs === (Prelude.foldr lcons empty xs `asTypeOf` seq)
+    &&
+    toList (fromList xs `asTypeOf` seq) == xs
 
 {-# ANN prop_toList (SymExWithConfig "--n 500") #-}
 prop_toList :: Seq Int -> Seq Int -> Bool
@@ -647,11 +647,16 @@ prop_inBounds_lookup seq i xs =
        &&
        lookupWithDefault 99 i xs == 99)
 
+infixl 9 ==>
+(==>) :: Bool -> Bool -> Maybe Bool
+False ==> _ = Nothing
+_ ==> b = Just b
 
-{-# ANN prop_update_adjust (SymExWithConfig "--n 1000") #-}
-prop_update_adjust ::  Seq Int -> Int -> Seq Int -> Bool
+{-# ANN prop_update_adjust (SymExWithConfig "--n 5000 --smt-lists") #-}
+prop_update_adjust ::  Seq Int -> Int -> Seq Int -> Maybe Bool
 prop_update_adjust seq i xs =
-    if inBounds i xs then
+  structuralInvariant' xs ==>
+    (if inBounds i xs then
       let ys = take i xs
           zs = drop (i+1) xs
           x = lookup i xs
@@ -666,7 +671,7 @@ prop_update_adjust seq i xs =
     else
       update i 99 xs === xs
       &&
-      adjust (+1) i xs === xs
+      adjust (+1) i xs === xs)
 
 {-# ANN prop_withIndex (SymExWithConfig "--n 1500") #-}
 prop_withIndex ::  Seq Int -> Seq Int -> Bool
