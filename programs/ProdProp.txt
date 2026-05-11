@@ -1,7 +1,7 @@
 Prod.length;SeqInt
 Prod.++;SeqInt
 Prod.drop;SeqInt
-Prod.rotate;SeqInt;seq.rev,str.replace_all,seq.at,seq.indexof,ite,seq.replace_all,seq.replace,seq.indexof,seq.contains
+Prod.rotate;SeqInt;seq.rev,str.replace_all,seq.at,seq.indexof,ite,seq.replace_all,seq.replace,seq.indexof,seq.contains,+,-
 Prod.rev;SeqInt
 Prod.qrev;SeqInt
 Prod.qrevflat;SeqInt

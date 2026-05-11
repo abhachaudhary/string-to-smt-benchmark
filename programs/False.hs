@@ -7,8 +7,8 @@
 module False where
 
 import Prelude (Eq,Ord,Show(..),(.),iterate,(!!),return,Bool(..),
-                Int, (+), (*), (-), (>), (<), (/=), (==), (<=), even, div, Eq, id, error)
-
+                Int, (+), (*), (-), (>), (<), (/=), (==), (<=), even, div, Eq, id, error, ($))
+import Control.Exception
 -- code here adapted from HipSpec.hs
 
 infix 1 =:=
@@ -48,6 +48,7 @@ not True = False
 not False = True
 
 infix 4 ===
+(===) :: Eq a => a -> a -> Bool
 x === y = x == y
 
 infix 4 =/=
@@ -264,3 +265,15 @@ prop_rot_inj0   n m ys xs = (rotate n (xs :: [Nat]) === rotate m ys) ==> (n === 
 
 prop_rot_uhhhw1 xs ys = rotate (length (xs :: [Nat])) (xs ++ ys) === xs ++ ys ==> xs === ys
 prop_rot_uhhhw2 xs ys = length (xs :: [Nat]) === length ys ==> xs === ys
+
+prop_01 n xs = let b = prop_rot_bogus n xs in assert b b
+prop_02 xs ys = let b = prop_len_bs xs ys in assert b b
+prop_03 n xs = let b = prop_drop_idem n xs in assert b b
+prop_04 n xs = let b = prop_drop_invol n xs in assert b b
+prop_05 n m xs = let b = prop_drop_inj1 n m xs in assert b b
+prop_06 n xs ys = let b = prop_drop_inj2 n xs ys in assert b b
+-- prop_07 xs ys = let b = prop_union_comm xs ys in assert b b
+prop_08 n m ys xs = let b = prop_rot_inj0' n m ys xs in assert b b
+prop_09 n m ys xs = let b = prop_rot_inj0 n m ys xs in assert b b
+prop_10 xs ys = let b = prop_rot_uhhhw1 xs ys in assert b b 
+prop_11 xs ys = let b = prop_rot_uhhhw2 xs ys in assert b b 

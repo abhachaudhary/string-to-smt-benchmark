@@ -3,7 +3,7 @@ False.++;SeqInt
 False.drop;SeqInt
 False.rev;SeqInt
 False.qrev;SeqInt
-False.rotate;SeqInt;seq.rev
+False.rotate;SeqInt;seq.rev,str.replace_all,seq.at,seq.indexof,ite,seq.replace_all,seq.replace,seq.indexof,seq.contains,+,-
 False.elem;SeqInt
 False.union;SeqInt
 False.sort;SeqInt
