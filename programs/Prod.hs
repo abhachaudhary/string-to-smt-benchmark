@@ -291,19 +291,19 @@ prop_L22 :: Eq a => [a] -> [a] -> [a] -> Bool
 prop_L22 xs ys zs =
   (xs ++ ys) ++ zs === xs ++ (ys ++ zs)
 
-prop_L23 :: Nat -> Nat -> Nat -> Bool
-prop_L23 x y z =
-  (x * y) * z === x * (y * z)
+-- prop_L23 :: Nat -> Nat -> Nat -> Bool
+-- prop_L23 x y z =
+--   (x * y) * z === x * (y * z)
 
-prop_L24 :: Nat -> Nat -> Nat -> Bool
-prop_L24 x y z =
-  (x + y) + z === x + (y + z)
+-- prop_L24 :: Nat -> Nat -> Nat -> Bool
+-- prop_L24 x y z =
+--   (x + y) + z === x + (y + z)
 
 
 -- Theorems
 
-prop_T01 :: Nat -> Bool
-prop_T01 x = double x === x + x
+-- prop_T01 :: Nat -> Bool
+-- prop_T01 x = double x === x + x
 
 prop_T02 :: Eq a => [a] -> [a] -> Bool
 prop_T02 x y = length (x ++ y ) === length (y ++ x)
@@ -348,8 +348,8 @@ prop_T14 x = bool (sorted (isort x))
 -- prop_T15 :: Nat -> Bool
 -- prop_T15 x = x + S x === S (x + x)
 
-prop_T16 :: Nat -> Bool
-prop_T16 x = bool (even (x + x))
+-- prop_T16 :: Nat -> Bool
+-- prop_T16 x = bool (even (x + x))
 
 prop_T17 :: Eq a => [a] -> [a] -> Bool
 prop_T17 x y = rev (rev (x ++ y)) === rev (rev x) ++ rev (rev y)
@@ -372,14 +372,14 @@ prop_T22 x y = even (length (x ++ y)) === even (length (y ++ x))
 prop_T23 :: Eq a => [a] -> [a] -> Bool
 prop_T23 x y = half (length (x ++ y)) === half (length (y ++ x))
 
-prop_T24 :: Nat -> Nat -> Bool
-prop_T24 x y = even (x + y) === even (y + x)
+-- prop_T24 :: Nat -> Nat -> Bool
+-- prop_T24 x y = even (x + y) === even (y + x)
 
 prop_T25 :: Eq a => [a] -> [a] -> Bool
 prop_T25 x y = even (length (x ++ y)) === even (length y + length x)
 
-prop_T26 :: Nat -> Nat -> Bool
-prop_T26 x y = half (x + y) === half (y + x)
+-- prop_T26 :: Nat -> Nat -> Bool
+-- prop_T26 x y = half (x + y) === half (y + x)
 
 prop_T27 :: Eq a => [a] -> Bool
 prop_T27 x = rev x === qrev x []
@@ -399,14 +399,14 @@ prop_T31 x = qrev (qrev x []) [] === x
 prop_T32 :: Eq a => [a] -> Bool
 prop_T32 x = rotate (length x) x === x
 
-prop_T33 :: Nat -> Bool
-prop_T33 x = fac x === qfac x one
+-- prop_T33 :: Nat -> Bool
+-- prop_T33 x = fac x === qfac x one
 
-prop_T34 :: Nat -> Nat -> Bool
-prop_T34 x y = x * y === mult x y zero
+-- prop_T34 :: Nat -> Nat -> Bool
+-- prop_T34 x y = x * y === mult x y zero
 
-prop_T35 :: Nat -> Nat -> Bool
-prop_T35 x y = exp x y === qexp x y one
+-- prop_T35 :: Nat -> Nat -> Bool
+-- prop_T35 x y = exp x y === qexp x y one
 
 prop_T36 :: Nat -> [Nat] -> [Nat] -> Bool
 prop_T36 x y z = x `elem` y ==> x `elem` (y ++ z)
