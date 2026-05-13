@@ -6,7 +6,7 @@ ZenoInt.len;SeqInt
 ZenoInt.elem;SeqInt
 ZenoInt.drop;SeqInt
 ZenoInt.take;SeqInt
-ZenoInt.count;SeqInt;ite,seq.prefixof,seq.suffixof
+ZenoInt.count;SeqInt;ite,seq.prefixof,seq.suffixof,mod
 ZenoInt.butlast;SeqInt;ite
 ZenoInt.last;SeqInt;ite
 ZenoInt.sorted;SeqInt
