@@ -8,5 +8,5 @@ Prod.qrevflat;SeqInt
 Prod.elem;SeqInt
 Prod.isort;SeqInt
 Prod.insert;SeqInt
-Prod.count;SeqInt;ite,seq.prefixof,seq.suffixof,mod
+Prod.count;SeqInt;ite,seq.prefixof,seq.suffixof,mod,seq.indexof
 Prod.sorted;SeqInt
